@@ -23,5 +23,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imagdic\\Covid19\\Covid19ServiceProvider"
+            ],
+            "aliases": {
+                "Covid19": "Imagdic\\Covid19\\Facades\\Covid19"
+            }
+        }
     }
 }
