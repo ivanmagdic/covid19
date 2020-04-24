@@ -10,34 +10,26 @@ composer require imagdic/covid19
 ## Usage
 
 ```php
-use Imagdic\Covid19\Covid19;
-
-$covid19 = new Covid19();
-
 // A summary of new and total cases per country updated daily.
-$summary = $covid19->summary();
+$summary = Covid19::summary();
 
 // Get recovered cases for specific country
-$recovered = $covid19->recoveredByCountry('countryName');
+$recovered = Covid19::recoveredByCountry('countryName');
 
 // Get death cases for specific country
-$deaths = $covid19->deathsByCountry('countryName');
+$deaths = Covid19::deathsByCountry('countryName');
 
 // Get confirmed cases for specific country
-$confirmed = $covid19->confirmedByCountry('countryName');
+$confirmed = Covid19::confirmedByCountry('countryName');
 
 // Get all cases for specific country
-$allCases = $covid19->allCasesByCountry('countryName');
+$allCases = Covid19::allCasesByCountry('countryName');
 ```
 
 ## Example
 
 ```php
-use Imagdic\Covid19\Covid19;
-
-$covid19 = new Covid19();
-
-$allCases = $covid19->allCasesByCountry('Italy');
+$allCases = Covid19::allCasesByCountry('Italy');
 ```
 
 Content of ```$allCases``` variable:
